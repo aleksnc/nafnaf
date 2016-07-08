@@ -23,11 +23,11 @@ module.exports = function(grunt){
         }]
       }
     },
-    jade: {
+    pug: {
       compile: {
         files: [{
           cwd: 'source',
-          src: ['*.jade'],
+          src: ['*.pug'],
           dest: 'dest',
           expand: true,
           ext: '.html',
@@ -96,9 +96,9 @@ module.exports = function(grunt){
         files: ['source/css/**/*.css'],
         tasks: ['copy:css','cmq'],
       },
-      jade: {
-        files: ['source/*.jade'],
-        tasks: ['jade'],
+      pug: {
+        files: ['source/*.pug'],
+        tasks: ['pug'],
       },
       less: {
         files: ['source/**/*.less'],
@@ -130,7 +130,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-combine-media-queries');
   grunt.loadNpmTasks('grunt-image');
-  grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-pug');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-copy');
@@ -138,7 +138,7 @@ module.exports = function(grunt){
   grunt.registerTask('default', [
     'image',
     'copy',
-    'jade',
+    'pug',
     'less',
     'autoprefixer',
     'cmq',
