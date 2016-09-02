@@ -1,0 +1,58 @@
+@text-size-xxl:                       36px;
+@text-size-xl:                        30px;
+@text-size-l:                         18px;
+@text-size:                           16px;
+@text-size-sm:                        14px;
+
+@color-primary:                       #f16c4d;
+@color-second:                        #ff4f26;
+@color-tertiary:                      #e25440;
+@color-tertiary-active:               #df3d27;
+
+
+@gray-dark:                           #191919;
+@gray-shadow:                         #4c4c4c;
+@gray:                                #838383;
+@gray-light:                          #e3dede;
+@gray-wight:                          #fafafa;
+
+@color-semi-1:                          rgba(255,255,255,0.7);
+
+
+@font-family:                       "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-h:                     arial, helvetica, sans-serif;
+
+@img-path:                            '../img/';
+
+
+h1{
+  margin: 0;
+  padding: 0;
+  font-size: (@text-size-xl)+2;
+}
+
+h2{
+  margin: 0;
+  padding: 0;
+  font-size: (@text-size-xl)-2;
+}
+
+
+.title{
+  font-family:                        @font-family;
+  font-weight:                        500;
+  font-size:                          (@text-size-xxl)-2;
+  margin:                             0;
+  display:                            block;
+  margin:                             0;
+  padding:                            0;
+  text-align:                         center;
+}
+
+.star{
+  &:after{
+    content: "*";
+    color: red;
+  }
+}
+
