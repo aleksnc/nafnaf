@@ -1,6 +1,6 @@
 {
   "name": "naf-naf",
-  "varsion": "0.0.1",
+  "varsion": "0.2.0",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "^3.0.4",
